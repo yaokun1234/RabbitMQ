@@ -19,6 +19,7 @@ public class MQConfig {
 
     private final RabbitTemplate rabbitTemplate;
 
+
     @PostConstruct
     public void init() {
         rabbitTemplate.setReturnsCallback(returned -> {
